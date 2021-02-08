@@ -259,18 +259,6 @@ public class EventHandler {
 					}
 				}
 			}
-			if (ItemDummyContainer.CONFIG.general.customThrow && !ItemDummyContainer.CONFIG_RENDERING.disableThrowHUD) {
-				if (power > 0) {
-					int renderPower = power;
-					renderPower /= 6;
-					if (renderPower < 1)
-						renderPower = 1;
-					if (renderPower > 6)
-						renderPower = 6;
-					String text = "Power: " + renderPower;
-					mc.player.sendStatusMessage(new TextComponentString(text), true);
-				}
-			}
 		}
 	}
 	
